@@ -1,0 +1,5 @@
+# AI Rules - Vercel v0
+# https://github.com/vlongx/ai-rules
+# Core
+DOMAIN-SUFFIX,v0.app
+DOMAIN-SUFFIX,v0.dev

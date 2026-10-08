@@ -1,0 +1,5 @@
+# AI Rules - xAI / Grok
+# https://github.com/vlongx/ai-rules
+# Core
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com

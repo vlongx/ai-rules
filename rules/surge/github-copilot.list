@@ -1,0 +1,6 @@
+# AI Rules - GitHub Copilot
+# https://github.com/vlongx/ai-rules
+# Core
+DOMAIN,api.githubcopilot.com
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN-SUFFIX,githubcopilot.com

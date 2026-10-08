@@ -1,0 +1,8 @@
+# AI Rules - Anthropic / Claude / Claude Code
+# https://github.com/vlongx/ai-rules
+# Core
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,clau.de

@@ -1,0 +1,5 @@
+# AI Rules - Perplexity AI
+# https://github.com/vlongx/ai-rules
+# Core
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,pplx.ai

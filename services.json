@@ -1,0 +1,125 @@
+{
+  "openai": {
+    "name": "OpenAI / ChatGPT / Codex / Sora"
+  },
+  "anthropic": {
+    "name": "Anthropic / Claude / Claude Code"
+  },
+  "google-ai": {
+    "name": "Google Gemini / AI Studio / NotebookLM"
+  },
+  "grok": {
+    "name": "xAI / Grok"
+  },
+  "meta-ai": {
+    "name": "Meta AI / Muse / Llama"
+  },
+  "suno": {
+    "name": "Suno AI Music"
+  },
+  "udio": {
+    "name": "Udio AI Music"
+  },
+  "elevenlabs": {
+    "name": "ElevenLabs AI Voice"
+  },
+  "perplexity": {
+    "name": "Perplexity AI"
+  },
+  "poe": {
+    "name": "Poe"
+  },
+  "mistral": {
+    "name": "Mistral AI"
+  },
+  "deepseek": {
+    "name": "DeepSeek"
+  },
+  "microsoft-copilot": {
+    "name": "Microsoft Copilot"
+  },
+  "github-copilot": {
+    "name": "GitHub Copilot"
+  },
+  "cursor": {
+    "name": "Cursor"
+  },
+  "windsurf": {
+    "name": "Windsurf / Codeium"
+  },
+  "replit": {
+    "name": "Replit"
+  },
+  "lovable": {
+    "name": "Lovable"
+  },
+  "bolt": {
+    "name": "Bolt.new"
+  },
+  "vercel-v0": {
+    "name": "Vercel v0"
+  },
+  "manus": {
+    "name": "Manus"
+  },
+  "genspark": {
+    "name": "Genspark"
+  },
+  "you": {
+    "name": "You.com"
+  },
+  "phind": {
+    "name": "Phind"
+  },
+  "openrouter": {
+    "name": "OpenRouter"
+  },
+  "huggingface": {
+    "name": "Hugging Face"
+  },
+  "replicate": {
+    "name": "Replicate"
+  },
+  "groq": {
+    "name": "Groq"
+  },
+  "together": {
+    "name": "Together AI"
+  },
+  "fireworks": {
+    "name": "Fireworks AI"
+  },
+  "midjourney": {
+    "name": "Midjourney"
+  },
+  "runway": {
+    "name": "Runway"
+  },
+  "pika": {
+    "name": "Pika"
+  },
+  "luma": {
+    "name": "Luma"
+  },
+  "ideogram": {
+    "name": "Ideogram"
+  },
+  "leonardo": {
+    "name": "Leonardo AI"
+  },
+  "kling": {
+    "name": "Kling AI"
+  },
+  "character-ai": {
+    "name": "Character.AI"
+  },
+  "cohere": {
+    "name": "Cohere"
+  },
+  "notion-ai": {
+    "name": "Notion AI"
+  },
+  "canva-ai": {
+    "name": "Canva AI"
+  }
+}

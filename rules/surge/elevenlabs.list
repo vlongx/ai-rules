@@ -1,0 +1,5 @@
+# AI Rules - ElevenLabs AI Voice
+# https://github.com/vlongx/ai-rules
+# Core
+DOMAIN-SUFFIX,elevenlabs.io
+DOMAIN-SUFFIX,elevenlabs.com

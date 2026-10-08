@@ -1,0 +1,5 @@
+# AI Rules - Microsoft Copilot
+# https://github.com/vlongx/ai-rules
+# Core
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,copilot.cloud.microsoft
