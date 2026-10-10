@@ -1,8 +1,20 @@
 # AI Rules - Stripe
-# Stripe payments, dashboard, and static resources.
+# Stripe Dashboard / API / Checkout / Connect / Link
 # https://github.com/vlongx/ai-rules
+# Sources: https://support.stripe.com/questions/verify-you-are-on-an-official-stripe-webpage
+# https://support.stripe.com/questions/privacy-and-security-of-stripe-js
 
-# Core
+# Core / Payments / Dashboard / API
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,stripeassets.com
 DOMAIN-SUFFIX,stripecdn.com
+DOMAIN-SUFFIX,stripe.network
+
+# Developer / Events / Marketing
+DOMAIN-SUFFIX,stripe.dev
+DOMAIN-SUFFIX,stripe.events
+DOMAIN-SUFFIX,stripe.global
+
+# Stripe Link / Payment Identity
+DOMAIN-SUFFIX,link.com
+DOMAIN-SUFFIX,onelink.com
