@@ -1,0 +1,44 @@
+name: Sync upstream icons
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/sync-icons.yml
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download original PNG icons
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p icon
+          root="https://raw.githubusercontent.com/lige47/lige_icon/main/icon/04ProxySoft"
+          curl --fail --location --retry 3 --silent --show-error "$root/chatgpt%281%29.png" -o icon/chatgpt.png
+          curl --fail --location --retry 3 --silent --show-error "$root/claude.png" -o icon/claude.png
+          curl --fail --location --retry 3 --silent --show-error "$root/grok.png" -o icon/grok.png
+          curl --fail --location --retry 3 --silent --show-error "$root/suno.png" -o icon/suno.png
+          curl --fail --location --retry 3 --silent --show-error "$root/stripe.png" -o icon/stripe.png
+          python3 - <<'PY'
+          from pathlib import Path
+          import struct
+          for p in sorted(Path("icon").glob("*.png")):
+              data=p.read_bytes()
+              assert data[:8]==b'\x89PNG\r\n\x1a\n', f"Not PNG: {p}"
+              w,h=struct.unpack(">II",data[16:24])
+              assert 0 < w <= 4096 and 0 < h <= 4096
+              print(f"{p}: {w}x{h}, {len(data)} bytes")
+          PY
+      - name: Commit icons
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add icon/*.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Add original ChatGPT, Claude, Grok, Suno and Stripe PNG icons"
+            git push
+          fi
