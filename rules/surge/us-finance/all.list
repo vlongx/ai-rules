@@ -1,0 +1,88 @@
+# US Finance Proxy Rules - All
+# US banking, credit cards, brokerage, payments and fintech
+# https://github.com/vlongx/ai-rules
+# Domain-only rules: choose a stable US exit in the client.
+# Note: some providers use worldwide shared domains; routing affects non-US services too.
+
+# Banking / checking
+DOMAIN-SUFFIX,chase.com
+DOMAIN-SUFFIX,chasecdn.com
+DOMAIN-SUFFIX,bankofamerica.com
+DOMAIN-SUFFIX,bofa.com
+DOMAIN-SUFFIX,wellsfargo.com
+DOMAIN-SUFFIX,wf.com
+DOMAIN-SUFFIX,capitalone.com
+DOMAIN-SUFFIX,discover.com
+DOMAIN-SUFFIX,discoverbank.com
+DOMAIN-SUFFIX,citi.com
+DOMAIN-SUFFIX,citibank.com
+DOMAIN-SUFFIX,usbank.com
+DOMAIN-SUFFIX,usbankfocus.com
+DOMAIN-SUFFIX,pnc.com
+DOMAIN-SUFFIX,truist.com
+DOMAIN-SUFFIX,regions.com
+DOMAIN-SUFFIX,td.com
+DOMAIN-SUFFIX,fifththird.com
+DOMAIN-SUFFIX,key.com
+DOMAIN-SUFFIX,ally.com
+DOMAIN-SUFFIX,sofi.com
+DOMAIN-SUFFIX,sofi.org
+DOMAIN-SUFFIX,varo.com
+DOMAIN-SUFFIX,current.com
+DOMAIN-SUFFIX,chime.com
+DOMAIN-SUFFIX,one.app
+DOMAIN-SUFFIX,onepay.com
+
+# Credit cards / payments
+DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,aexp.com
+DOMAIN-SUFFIX,amex.com
+DOMAIN-SUFFIX,creditonebank.com
+DOMAIN-SUFFIX,synchrony.com
+DOMAIN-SUFFIX,barclaycardus.com
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,venmo.com
+DOMAIN-SUFFIX,cash.app
+DOMAIN-SUFFIX,squareup.com
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripeassets.com
+DOMAIN-SUFFIX,stripecdn.com
+DOMAIN-SUFFIX,stripe.network
+
+# Brokerage / investing
+DOMAIN-SUFFIX,schwab.com
+DOMAIN-SUFFIX,schwabapi.com
+DOMAIN-SUFFIX,schwabcdn.com
+DOMAIN-SUFFIX,thinkorswim.com
+DOMAIN-SUFFIX,tdameritrade.com
+DOMAIN-SUFFIX,ameritrade.com
+DOMAIN-SUFFIX,fidelity.com
+DOMAIN-SUFFIX,fidelityinvestments.com
+DOMAIN-SUFFIX,interactivebrokers.com
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,ibtws.com
+DOMAIN-SUFFIX,robinhood.com
+DOMAIN-SUFFIX,webull.com
+DOMAIN-SUFFIX,etrade.com
+DOMAIN-SUFFIX,merrilledge.com
+DOMAIN-SUFFIX,vanguard.com
+DOMAIN-SUFFIX,public.com
+DOMAIN-SUFFIX,acorns.com
+DOMAIN-SUFFIX,betterment.com
+DOMAIN-SUFFIX,wealthfront.com
+
+# Fintech / transfers
+DOMAIN-SUFFIX,mercury.com
+DOMAIN-SUFFIX,mercury.co
+DOMAIN-SUFFIX,relayfi.com
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,revolut.com
+DOMAIN-SUFFIX,remitly.com
+DOMAIN-SUFFIX,westernunion.com
+DOMAIN-SUFFIX,xoom.com
+DOMAIN-SUFFIX,plaid.com
+DOMAIN-SUFFIX,mx.com
+DOMAIN-SUFFIX,finicity.com
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,kraken.io
+DOMAIN-SUFFIX,krakenassets.com
