@@ -1,6 +1,6 @@
 # AI Rules
 
-<p align="center"><img src="assets/ai-rules-icon.svg" alt="AI Rules icon" width="160" /></p>
+<p align="center"><img src="icon/ai-rules-icon.svg" alt="AI Rules icon" width="160" /></p>
 
 全球 AI 服务分流规则合集。独立整理，参考 [VPSDance/ai-proxy-rules](https://github.com/VPSDance/ai-proxy-rules) 的目录结构。
 
