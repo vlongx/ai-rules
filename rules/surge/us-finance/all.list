@@ -48,3 +48,11 @@ DOMAIN-SUFFIX,public.com
 DOMAIN-SUFFIX,acorns.com
 DOMAIN-SUFFIX,betterment.com
 DOMAIN-SUFFIX,wealthfront.com
+
+# Mercury / Wise / Kraken
+DOMAIN-SUFFIX,mercury.com
+DOMAIN-SUFFIX,mercury.co
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,kraken.io
+DOMAIN-SUFFIX,krakenassets.com
