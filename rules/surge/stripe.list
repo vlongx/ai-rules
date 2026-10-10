@@ -1,0 +1,8 @@
+# AI Rules - Stripe
+# Stripe payments, dashboard, and static resources.
+# https://github.com/vlongx/ai-rules
+
+# Core
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripeassets.com
+DOMAIN-SUFFIX,stripecdn.com
