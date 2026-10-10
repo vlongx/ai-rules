@@ -56,3 +56,9 @@ DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,kraken.com
 DOMAIN-SUFFIX,kraken.io
 DOMAIN-SUFFIX,krakenassets.com
+
+# PayPal
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,paypal.me
+DOMAIN-SUFFIX,paypal-mktg.com
