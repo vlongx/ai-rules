@@ -23,6 +23,21 @@ RULE-SET,https://raw.githubusercontent.com/vlongx/ai-rules/main/rules/surge/all.
 RULE-SET,https://raw.githubusercontent.com/vlongx/ai-rules/main/rules/surge/suno.list,AI-Proxy
 ```
 
+
+## 可选 Apple 服务分流（与 AI 规则独立）
+
+截图中的 Apple 服务规则另存于 `rules/surge/optional/apple-services.list`，**不会合入 AI 统一订阅**，也不会影响原有 41 组 AI 服务。
+
+在 Surge 配置的 `[Rule]` 下，按需添加（将 `PROXY` 改成已有的策略组名称）：
+
+```ini
+RULE-SET,https://raw.githubusercontent.com/vlongx/ai-rules/main/rules/surge/optional/apple-services.list,PROXY
+```
+
+规则涵盖 Apple 软件更新、商店、iCloud 与 Siri 等相关域名。原截图中的 `chatgpt.com`、`openai.com` 已存在于 AI 总规则中，不重复加入 Apple 列表。此列表使用无策略字段的 Surge RULE-SET 格式；不应在独立列表内写 `,PROXY`。
+
+**提醒：** 代理路由不等于阻止软件更新，也不能保证消除设置 App 的更新红色角标。把 iCloud、Apple Store、设备配置、Siri 等服务强制走代理可能影响正常使用；建议只在明确需要时开启。 `DOMAIN-KEYWORD,siri` 匹配范围较广，应特别留意误匹配。
+
 ## 项目结构
 
 - `rules/surge/all.list`：所有 AI 服务合并规则（不含代理策略）
