@@ -4,7 +4,8 @@ import re
 
 root = Path(__file__).resolve().parents[1]
 folder = root / 'rules' / 'surge'
-files = sorted(x for x in folder.glob('*.list') if x.name != 'all.list')
+# Stripe is an intentionally independent payment-service list, not part of AI all.list.
+files = sorted(x for x in folder.glob('*.list') if x.name not in ('all.list', 'stripe.list'))
 files += sorted((folder / 'extensions').glob('*.list'))
 assert files, 'No service rules or extensions found'
 
