@@ -6,7 +6,7 @@
 
 ## 支持服务
 
-共 41 组，包括 ChatGPT、OpenAI、Codex、Sora、Claude、Gemini、Grok、Meta AI / Muse、Suno、Perplexity、Cursor、Manus、Midjourney 等。
+原有 41 组服务保持不变，另增加一份 Haxhork/DeveloperBeta 扩展规则（统一订阅目前包含 313 条去重规则），包括 ChatGPT、OpenAI、Codex、Sora、Claude、Gemini、Grok、Meta AI / Muse、Suno、Perplexity、Cursor、Manus、Midjourney 等。
 
 ## Surge 统一订阅
 
@@ -23,6 +23,16 @@ RULE-SET,https://raw.githubusercontent.com/vlongx/ai-rules/main/rules/surge/all.
 RULE-SET,https://raw.githubusercontent.com/vlongx/ai-rules/main/rules/surge/suno.list,AI-Proxy
 ```
 
+
+## Haxhork AI.list 合并扩展
+
+已将 [Haxhork/DeveloperBeta AI.list](https://raw.githubusercontent.com/Haxhork/DeveloperBeta/refs/heads/main/Surge/Ruleset/AI.list) 的规则按原始语义**全部纳入**统一订阅：原文件 245 条，源文件自身重复 2 条，已有规则完全重复 23 条，新增 220 条，统一订阅共 313 条。现有 41 个独立服务规则保持不变。
+
+- `rules/surge/extensions/haxhork.list`：仅保存来自该来源、此前没有的 220 条规则（含 `AND`、`IP-CIDR` 和 `IP-CIDR6`）。
+- `rules/surge/all.list`：自动订阅入口，已包含该扩展，无需在 Surge 中再单独添加扩展订阅，避免重复匹配。
+- `scripts/validate.py`：校验普通域名、逻辑规则、IPv4/IPv6 CIDR 格式与合并一致性。
+
+规则以 2026-11-12 读取的来源内容为静态快照，并非自动跟随上游更新。部分 AI API 域名属于中国或其他服务商，启用统一规则后也会走用户指定的 AI 策略组；请按 Surge 请求记录检查实际线路。规则仅用于分流，不保证所有上游端点持续有效。
 
 ## 可选 Apple 服务分流（与 AI 规则独立）
 
@@ -42,6 +52,7 @@ RULE-SET,https://raw.githubusercontent.com/vlongx/ai-rules/main/rules/surge/opti
 
 - `rules/surge/all.list`：所有 AI 服务合并规则（不含代理策略）
 - `rules/surge/<service>.list`：独立服务规则
+- `rules/surge/extensions/haxhork.list`：第三方 AI 来源补充规则（已合并到 all.list）
 - `services.json`：服务名清单
 - `scripts/validate.py`：规则格式及一致性校验
 - `.github/workflows/validate.yml`：GitHub Actions 自动校验
